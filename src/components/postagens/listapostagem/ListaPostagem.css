@@ -1,0 +1,53 @@
+.card-postagem{
+    background: #263165;
+    width: 500px!important;
+    height: 300px!important;
+    border-radius: 10px!important;
+    box-shadow: 3px 3px 3px 0px rgba(53, 52, 52, 0.75);
+    -webkit-box-shadow: 3px 3px 3px 0px rgba(53, 52, 52, 0.75);
+    -moz-box-shadow: 3px 3px 3px 0px rgba(53, 52, 52, 0.75);
+    font-weight: Teko !important;
+    padding: 20px !important;
+    display: block;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.back-lista-post{
+    background: linear-gradient(45deg,#88c636 , #263165 );
+
+}.text-decorator-none{
+    text-decoration: none;
+}
+
+.font-feed{
+    color: white;
+}
+
+.font-feed-tema{
+    color: #88c636;
+    font-style: italic;
+}
+
+.font-feed-user{
+    color: #88c636;
+    font-weight: bold;
+}
+
+.perfil-icon{
+    font-size: 50px !important;
+    color: #88c636;
+    margin-top: -15px;
+    margin-right: 5px;
+    margin-left: -5px;
+}
+
+.dot-icon{
+    font-size: 30px !important;
+    color: #88c636;
+    margin-top: 1px;
+}
+
+.option-icon{
+    color: white !important;
+}

@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@700&display=swap');
+
+.cursor {
+    cursor: pointer;
+    color: white;
+}
+
+.color-nav {
+    background-color:  #bfeb55;
+}
+
+.text-decorator-none{
+    text-decoration: none;
+}
+
+#colorText{
+    color: #458766;
+    font-family: 'Signika', sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.MuiBox-root-4 {
+    display: flex;
+    justify-content: start;
+    position: relative;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #458766 ;
+    left: 100rem;
+    margin-left: 20rem;
+}
+
+.container3 {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    
+}
+
+#efeito:hover {
+    transform: scale(0.72);
+    border-bottom: 1px rgb(255, 255, 255) solid;
+    transition: transform 1s;
+}
+.MuiBox-root-37 {
+    display: flex;
+    justify-content: start;
+    margin-right: 18rem;
+}
+/*Formatação login*/
+
+.MuiBox-root-14, .MuiBox-root-18 {
+    color: #3f51b5;
+}
+
+.MuiBox-root-14:hover, .MuiBox-root-18:hover {
+    transform: scale(0.72);
+    border-bottom: 1px rgb(255, 255, 255) solid;
+    transition: transform 1s;
+}
+
+.MuiTypography-h6:hover{
+    transform: scale(0.72);
+    border-bottom: 1px #ffffff solid;
+    transition: transform 2s;
+    margin-left: 20px;;
+}
+
+.imglogo9{
+ display: block; 
+ width: 10%;
+
+}
+.imglogo8{
+    display: block; 
+    width: 10%;
+}
+
+.MuiBox-root-26 {
+    transform: scale(0.65);
+    border-bottom: 1px #ffffff solid;
+    margin-left: 1rem;
+}
+#texto1{
+    width: 135px;
+    padding: 18px;
+    margin-right: 89px;
+}
+#texto2{
+    margin-left: -90px;
+    margin-right: 92px;
+}
+.MuiBox-root-28 {
+    display: flex;
+    justify-content: start;
+    margin-right: 332px;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+.MuiBox-root-30 {
+    margin-left: -241px;
+    margin-right: 452px;
+    width: 70px;
+}
+
+.MuiBox-root-32 {
+    margin-left: -407px;
+    margin-right: 420px;
+    width: 70px;
+}
+.MuiBox-root-34 {
+    margin-left: -387px;
+    margin-right: 240px;
+    width: 170px;
+}
+.MuiBox-root-36 {
+    margin-left: -233px;
+    margin-right: 318px;
+    width: 110px;
+}
+
+.MuiBox-root-38 {
+    margin-left: -290px;
+    margin-right: 308px;
+    width: 213px;
+}
+.MuiBox-root-40 {
+    margin-left: 333px;
+    margin-right: -294px;
+}
+.MuiBox-root-37 {
+    display: flex;
+    justify-content: start;
+    margin-right: 332px;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+.MuiBox-root-39 {
+    margin-left: -241px;
+    margin-right: 452px;
+    width: 70px;
+}
+
+.MuiBox-root-41 {
+    margin-left: -407px;
+    margin-right: 420px;
+    width: 70px;
+}
+.MuiBox-root-43 {
+    margin-left: -387px;
+    margin-right: 240px;
+    width: 165px;
+}
+.MuiBox-root-45 {
+    margin-left: -233px;
+    margin-right: 318px;
+    width: 110px;
+}
+
+.MuiBox-root-47 {
+    margin-left: -290px;
+    margin-right: 308px;
+    width: 213px;
+}
+
+.MuiBox-root-145 {
+    display: flex;
+    justify-content: start;
+    margin-right: 332px;
+    flex-wrap: nowrap;
+    align-content: center;
+
+}
+
+.MuiTypography-h6 {
+    font-size: 1.25rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+
+}
+
+.jss158 {
+    display: flex;
+    justify-content: start;
+    margin-right: 340px;
+}
+
+.jss161 {
+    margin-left: 8px;
+    margin-right: -3px;
+    width: 165px;
+}
+
+.jss163 {
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 211px;
+}
+.texto {
+    color: white;
+}

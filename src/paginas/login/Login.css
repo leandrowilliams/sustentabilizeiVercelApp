@@ -1,0 +1,42 @@
+.card{
+    background: #263165 !important;
+    width: 400px!important;
+    height: 400px!important;
+    border-radius: 10px!important;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    font-weight: Teko !important;
+    padding: 20px !important;
+}
+
+.background{
+    background: linear-gradient(45deg,#88c636 , #263165 );
+    background-repeat: no-repeat;
+    width: 100vh;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.color-input{
+    background-color: white;
+    color: #545951;
+    border-color: white;
+    border-radius: 20px;
+    height: 30px;
+}
+
+.botao{
+    background-color: #ADD9B0 !important;
+    border-radius: 20px!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fonte{
+    color: white;
+}
+
+

@@ -21,7 +21,7 @@ function Home() {
     
 
     return (
-        <>
+        <div className="page">
             <Grid container direction="row" justifyContent="center" alignItems="center" className="grid1, page">
                 <Grid alignItems="center" item xs={12}>
                     <Box paddingTop={1}>
@@ -94,7 +94,7 @@ function Home() {
             <Grid container direction="row" justifyContent="center" alignItems="center" className="grid2, page2">
                 <Box className = "sus-titulo">
                     <div>
-                        <img className="imglogo3" src="https://i.imgur.com/jcbi0LA.jpg" alt="SUSTENTABILIZEI-COLETOR-MESTRUAL" />
+                        <img className="imglogo3" src="https://i.imgur.com/SZ2clE3.png" alt="SUSTENTABILIZEI-ALIMENTO" />
                     </div>
 
                 </Box>
@@ -110,7 +110,7 @@ function Home() {
             <Grid container direction="row" justifyContent="center" alignItems="center" className="grid3, page3">
                 <Box>
                     <div>
-                        <img className="imglogo3" src="https://i.imgur.com/SZ2clE3.png" alt="SUSTENTABILIZEI-ALIMENTO" />
+                        <img className="imglogo3" src="https://i.imgur.com/H7Fq0hI.png" alt="SUSTENTABILIZEI-COLETOR-MESTRUAL" />
                     </div>
 
                 </Box>
@@ -125,7 +125,7 @@ function Home() {
                 </Box>
 
             </Grid>
-        </>
+        </div>
     );
 }
 

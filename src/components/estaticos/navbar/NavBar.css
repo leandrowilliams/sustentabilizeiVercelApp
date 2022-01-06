@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Signika:wght@700&display=swap');
 
+
 .cursor {
     cursor: pointer;
     color: white;
@@ -55,7 +56,7 @@
     justify-content: start;
     margin-right: 18rem;
 }
-/*Formatação login*/
+/* /Formatação login/ */
 
 .MuiBox-root-14, .MuiBox-root-18 {
     color: #3f51b5;
@@ -67,7 +68,7 @@
     transition: transform 1s;
 }
 
-.MuiTypography-h6:hover{
+.MuiTypography-h6{
     transform: scale(0.72);
     border-bottom: 1px #ffffff solid;
     transition: transform 2s;
@@ -180,19 +181,19 @@
 
 }
 
+
+.jss158 {
+    display: flex;
+    justify-content: start;
+    margin-right: 340px;
+}
+
 .MuiTypography-h6 {
     font-size: 1.25rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 500;
     line-height: 1.6;
     letter-spacing: 0.0075em;
-
-}
-
-.jss158 {
-    display: flex;
-    justify-content: start;
-    margin-right: 340px;
 }
 
 .jss161 {

@@ -89,7 +89,7 @@ function Home() {
             <Grid container direction="row" justifyContent="center" alignItems="center" className="grid2, page2">
                 <Box className = "sus-titulo">
                     <div>
-                        <img className="imglogo3" src="https://i.imgur.com/JDpoWda.png" alt="SUSTENTABILIZE" />
+                        <img className="imglogo3" src="https://i.imgur.com/HLG3qOR.png" alt="SUSTENTABILIZE" />
                     </div>
 
                 </Box>

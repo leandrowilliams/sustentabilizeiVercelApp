@@ -68,7 +68,7 @@
     transition: transform 1s;
 }
 
-.MuiTypography-h6{
+.MuiTypography-h6:hover{
     transform: scale(0.72);
     border-bottom: 1px #ffffff solid;
     transition: transform 2s;

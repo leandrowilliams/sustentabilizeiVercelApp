@@ -82,7 +82,7 @@ function Home() {
                     <Typography variant="h2" align="center" className="textos">Parceiros e Patrocinadores</Typography>
                     <Box display="flex" justifyContent="center" padding={2}>
                         <img className="parceirosepatrocinadores" src="https://i.imgur.com/fYYvNQS.png" alt="LOGO GENERATION" />
-                        <img className="parceirosepatrocinadores" src="https://i.imgur.com/EZd8APl.png" alt="LOGO BRASSCOM" />
+                        <img className="parceirosepatrocinadores" src="https://i.imgur.com/9RVcvJO.png" alt="LOGO BRASSCOM" />
                     </Box>
                 </Box>
 

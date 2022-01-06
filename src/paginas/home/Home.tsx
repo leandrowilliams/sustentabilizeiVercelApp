@@ -35,6 +35,8 @@ function Home() {
                         <CarouselComponent />
                     </Box>
                 </Grid>
+                
+            </Grid>
             <Grid container direction="row" justifyContent="center" alignItems="center" className="grid2, page2">
                 <Box className = "sus-titulo">
                     <div>

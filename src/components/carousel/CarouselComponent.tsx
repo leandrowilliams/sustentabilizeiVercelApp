@@ -1,22 +1,50 @@
-import React from "react"
-import Carousel from "react-elastic-carousel"
+import React, { useState } from 'react'
+import Button from 'react-bootstrap/Button';
+import Carousel from 'react-bootstrap/Carousel'
 
-function CarouselComponent() {
-    var items= [
-        { id: 1, title: 'item #1', img: "https://i.imgur.com/TmfBl9k.png" },
-        { id: 2, title: 'item #2', img: "https://i.imgur.com/F3ZZvqP.png" },
-        { id: 3, title: 'item #3', img: "https://i.imgur.com/xgPa8xT.png" },
-        { id: 4, title: 'item #4', img: "https://i.imgur.com/L52J0ve.png" }
-    ]
+function CaroucelComponent() {
+    const [itens, setItens] = useState([
+        {
+            img: "https://i.imgur.com/TmfBl9k.png",
+            titulo: "Titulo 1",
+        },
+        {
+            img: "https://i.imgur.com/F3ZZvqP.png",
+            titulo: "Titulo 2",
+
+        },
+        {
+            img: "https://i.imgur.com/xgPa8xT.png",
+            titulo: "Titulo 3",
+        },
+        {
+            img: "https://i.imgur.com/L52J0ve.png",
+            titulo: "Titulo 4",
+        },
+    ])
     return (
-        <Carousel isRTL={false} enableAutoPlay autoPlaySpeed={9000} className="carro">
-            {items.map(item => <div key={item.id}>
-                <img src={item.img} alt="" width="100%" height="300"/>
+        <div>
+            <Carousel>
+                {
+                    itens.map(item => (
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={item.img}
+                                alt="First slide"
+                            />
+                            <Carousel.Caption>
+                                <h3>{item.titulo}</h3>
+                            </Carousel.Caption>
 
-            </div>)}
-        </Carousel>
+                        </Carousel.Item>
+                    ))
+                }
+
+
+            </Carousel>
+        </div>
     )
-
 }
 
-export default CarouselComponent
+export default CaroucelComponent

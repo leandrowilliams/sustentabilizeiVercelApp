@@ -23,13 +23,6 @@ function Home() {
     return (
         <div className="page">
             <Grid container direction="row" justifyContent="center" alignItems="center" className="grid1, page">
-                <Grid alignItems="center" item xs={12}>
-                    <Box paddingTop={1}>
-                        <img className="parceirosepatrocinadores imglogo2" src="https://i.imgur.com/fmYFcHr.png" alt="LOGO SUSTENTABILIZEI" />
-                    </Box>
-                </Grid>
-
-
                 <Grid item xs={12} >
                     <Box className="carousel" paddingX="0%">
                         <CarouselComponent />

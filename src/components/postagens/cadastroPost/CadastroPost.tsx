@@ -1,5 +1,5 @@
 import React, { ChangeEvent, useEffect, useState } from 'react'
-import { Container, Typography, TextField, Button, Select, InputLabel, MenuItem, FormControl, FormHelperText } from "@material-ui/core"
+import { Container, Typography, TextField, Button, Select, InputLabel, MenuItem, FormControl, FormHelperText, Box } from "@material-ui/core"
 import './CadastroPost.css';
 import { useHistory, useParams } from 'react-router-dom';
 import Tema from '../../../models/Tema';
@@ -159,9 +159,18 @@ function CadastroPost() {
                         }
                     </Select>
                     <FormHelperText>Escolha um tema para a postagem</FormHelperText>
-                    <Button type="submit" variant="contained" color="primary">
-                        Finalizar
-                    </Button>
+                    <Box display="flex" >
+                        <Box className='btn-finalizar'>
+                            <Button type="submit" variant="contained" className='btn-finalizar-cor'>
+                                Finalizar
+                            </Button>
+                        </Box>
+                        <Box>
+                            <Button onClick={back} variant="contained" color="primary" className="btn-cancelar-cor">
+                                Cancelar
+                            </Button>
+                        </Box>
+                    </Box>
                 </FormControl>
             </form>
         </Container>

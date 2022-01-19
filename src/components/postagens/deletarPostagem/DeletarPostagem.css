@@ -1,0 +1,18 @@
+.btn-nao-del {
+    background-color: #263165 !important;
+    color: white !important;
+}
+
+.btn-sim-del {
+    background-color: #88c636 !important;
+    color: white !important;
+}
+
+.card-del-post {
+    width: 300px;
+}
+
+.ajust-card {
+    justify-content: center;
+    align-items: center;
+}

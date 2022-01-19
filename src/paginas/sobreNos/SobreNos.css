@@ -1,25 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Signika:wght@700&display=swap%27%22%22");
-
-
-.corpo{
-    background: linear-gradient(45deg,#769153 , #0d1642 );
-
+.corpo {
+    background: linear-gradient(45deg, #769153, #0d1642);
 }
-.corpo1{
+
+.corpo1 {
     color: #0d1642;
 }
+
 .sus-titulo {
     font-size: 20px !important;
     color: #d4d4d6;
     font-family: 'Signika';
 }
-.fotos{
+
+.fotos {
     width: 400px;
-    height: 300px;
+    height: 400px;
     border: 0px;
     margin-right: 50px;
 }
-.fotos1{
+
+.fotos1 {
     width: 400px;
     height: 300px;
     border: 0px;

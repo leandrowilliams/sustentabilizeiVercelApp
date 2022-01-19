@@ -1,4 +1,4 @@
-import React, {useState, useEffect, ChangeEvent} from "react";
+import React, { useState, useEffect, ChangeEvent } from "react";
 import { useHistory } from "react-router-dom";
 import User from "../../models/User"
 import { cadastroUsuario } from "../../services/Service";
@@ -8,9 +8,9 @@ import "./CadastroUsuario.css";
 import { toast } from "react-toastify";
 
 function CadastroUsuario() {
-    
+
     let history = useHistory();
-    const [confirmarSenha,setConfirmarSenha] = useState<String>("")
+    const [confirmarSenha, setConfirmarSenha] = useState<String>("")
     const [user, setUser] = useState<User>(
         {
             id: 0,
@@ -34,7 +34,7 @@ function CadastroUsuario() {
     }, [userResult])
 
 
-    function confirmarSenhaHandle(e: ChangeEvent<HTMLInputElement>){
+    function confirmarSenhaHandle(e: ChangeEvent<HTMLInputElement>) {
         setConfirmarSenha(e.target.value)
     }
 
@@ -49,8 +49,8 @@ function CadastroUsuario() {
     }
     async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
         e.preventDefault()
-        if(confirmarSenha == user.senha){
-        cadastroUsuario(`/usuarios/cadastrar`, user, setUserResult)
+        if (confirmarSenha == user.senha) {
+            cadastroUsuario(`/usuarios/cadastrar`, user, setUserResult)
             toast.success("Usuario cadastrado com sucesso", {
                 position: "top-right",
                 autoClose: 2000,
@@ -61,7 +61,7 @@ function CadastroUsuario() {
                 theme: "colored",
                 progress: undefined,
             });
-        }else{
+        } else {
             toast.error("Dados inconsistentes. Favor verificar as informações de cadastro.", {
                 position: "top-right",
                 autoClose: 2000,
@@ -75,39 +75,41 @@ function CadastroUsuario() {
         }
     }
     return (
-        <Grid container direction = "row" justifyContent = "center" alignItems = "center" className = "background" >
-            <Grid item xs = {12} alignItems = "center"   >
-            <Box className = "imagem-logo" >
-                <Box display="flex" justifyContent="center" alignItems="center" height="100vh" borderRadius = {8} >
-                    <form onSubmit = {onSubmit} className="card-cadastro" >
-                            <Typography variant = "h3" gutterBottom  component = "h3" align = "center" className = "fonte" >Cadastrar</Typography>
-                            <TextField  value = {user.nome} onChange = {(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id = "nome" label = "Nome" variant="filled" name = "nome" margin = "normal" fullWidth style={{ backgroundColor: '#e8f0fe', borderRadius: '4px'}} />
-                            <TextField  value = {user.usuario} onChange = {(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id = "usuario" label = "Usuario" variant="filled" name = "usuario" margin = "normal"  fullWidth style={{ backgroundColor: '#e8f0fe', borderRadius: '4px'}} />
-                            <TextField  value = {user.senha} onChange = {(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id = "senha" label = "Senha" variant="filled" name = "senha" margin = "normal" type = "password"fullWidth style={{ backgroundColor: '#e8f0fe', borderRadius: '4px'}} />
-                            <TextField  value = {confirmarSenha} onChange = {(e: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(e)} id = "confirmarsenha" label = "Confirmar Senha" variant="filled" name = "confirmarsenha" margin = "normal" type = "password" fullWidth style={{ backgroundColor: '#e8f0fe', borderRadius: '4px'}} />
-                            <Box marginTop = {2} textAlign = "center"  > 
-                                <Link to = "/login" className = "text-decorator-none" >
-                                    <Button  variant = "contained"   className = "botao"  >
+        <Grid container direction="row" justifyContent="center" alignItems="center" className="background" >
+            <Grid item xs={12} alignItems="center"   >
+                <Box className="imagem-logo" >
+                    <Box display="flex" justifyContent="center" alignItems="center" height="100vh" borderRadius={8} >
+                        <form onSubmit={onSubmit} className="card-cadastro" >
+                            <Typography variant="h3" gutterBottom component="h3" align="center" className="fonte" >Cadastrar</Typography>
+                            <TextField value={user.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="nome" label="Nome" variant="filled" name="nome" margin="normal" fullWidth style={{ backgroundColor: '#e8f0fe', borderRadius: '4px' }} />
+                            <TextField value={user.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="usuario" label="Usuario" variant="filled" name="usuario" margin="normal" fullWidth style={{ backgroundColor: '#e8f0fe', borderRadius: '4px' }} />
+                            <TextField value={user.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="senha" label="Senha" variant="filled" name="senha" margin="normal" type="password" fullWidth style={{ backgroundColor: '#e8f0fe', borderRadius: '4px' }} />
+                            <TextField value={confirmarSenha} onChange={(e: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(e)} id="confirmarsenha" label="Confirmar Senha" variant="filled" name="confirmarsenha" margin="normal" type="password" fullWidth style={{ backgroundColor: '#e8f0fe', borderRadius: '4px' }} />
+                            <Box marginTop={2} textAlign="center"  >
+                                <Box><Link to="/login" className="text-decorator-none" >
+                                    <Button variant="contained" className="botao"  >
                                         Cancelar
-                                    </Button>   
+                                    </Button>
                                 </Link>
-                                <Button type = "submit" variant = "contained" className = "botao" >
-                                        Cadastrar
-                                    </Button>   
-                            </Box>  
+                                </Box>
+                                <Box><Button type="submit" variant="contained" className="botao" >
+                                    Cadastrar
+                                </Button>
+                                </Box>
+                            </Box>
 
-                             <Box display = "flex" justifyContent = "center" marginTop = {2}>
-                        <Box marginRight = {1}>
-                            <Typography variant = "subtitle1" gutterBottom align = "center" className = "fonte">Já tem uma conta?</Typography>
-                        </Box>
-                        <Link to = "/login">
-                        <Typography variant = "subtitle1" gutterBottom align = "center" className = "fonte">Logue-se</Typography>
-                        </Link>
-                            
-                    </Box>
-                            
+                            <Box display="flex" justifyContent="center" marginTop={2}>
+                                <Box marginRight={1}>
+                                    <Typography variant="subtitle1" gutterBottom align="center" className="fonte">Já tem uma conta?</Typography>
+                                </Box>
+                                <Link to="/login">
+                                    <Typography variant="subtitle1" gutterBottom align="center" className="fonte">Logue-se</Typography>
+                                </Link>
+
+                            </Box>
+
                         </form>
-                </Box>
+                    </Box>
                 </Box>
 
             </Grid>

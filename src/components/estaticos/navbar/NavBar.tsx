@@ -123,7 +123,7 @@ function Navbar() {
                     <Link to="/sobrenos" className="text-decorator-none">
                         <Box mx={1} style={{ cursor: "pointer" }} >
                             <Typography variant="h6" className="texto">
-                                Sobre NÃ³s
+                                Sobre Nós
                             </Typography>
                         </Box>
                     </Link>

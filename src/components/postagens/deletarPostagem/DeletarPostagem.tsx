@@ -92,7 +92,7 @@ function DeletarPostagem() {
                                 </Button>
                             </Box>
                             <Box>
-                                <Button className="btn-sim-del" onClick={nao} variant="contained" size='large' color="secondary">
+                                <Button className="btn-nao-del" onClick={nao} variant="contained" size='large' color="secondary">
                                     Não
                                 </Button>
                             </Box>

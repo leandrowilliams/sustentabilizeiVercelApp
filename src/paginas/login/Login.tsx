@@ -96,7 +96,7 @@ function Login() {
                             fullWidth
                             style={{ backgroundColor: '#e8f0fe', borderRadius: '4px' }}
                         />
-                        <Box marginTop={2} textAlign="center"  >
+                        <Box display="flex" marginTop={2} textAlign="center">
                             <Box><Link to="/login" className="text-decorator-none" >
 
                                 <Button variant="contained" className="btnCancelar botao"  >
@@ -105,7 +105,7 @@ function Login() {
 
                             </Link>
                             </Box>
-                            <Box>
+                            <Box className="corcor">
                                 <Button type="submit" variant="contained" className="botao-cor botao" >
                                     Logar
                                 </Button>

@@ -85,7 +85,7 @@ function CadastroUsuario() {
                             <TextField value={user.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="usuario" label="Usuario" variant="filled" name="usuario" margin="normal" fullWidth style={{ backgroundColor: '#e8f0fe', borderRadius: '4px' }} />
                             <TextField value={user.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="senha" label="Senha" variant="filled" name="senha" margin="normal" type="password" fullWidth style={{ backgroundColor: '#e8f0fe', borderRadius: '4px' }} />
                             <TextField value={confirmarSenha} onChange={(e: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(e)} id="confirmarsenha" label="Confirmar Senha" variant="filled" name="confirmarsenha" margin="normal" type="password" fullWidth style={{ backgroundColor: '#e8f0fe', borderRadius: '4px' }} />
-                            <Box marginTop={2} textAlign="center"  >
+                            <Box display="flex" marginTop={2} textAlign="center"  >
                                 <Box><Link to="/login" className="text-decorator-none" >
                                     <Button variant="contained" className="botao"  >
                                         Cancelar

@@ -75,8 +75,27 @@ function Login() {
                     <Box  display="flex" justifyContent="center" alignItems="center" height="100vh" borderRadius = {5}>
                         <form onSubmit = {onSubmit} className="card"  >
                                 <Typography variant = "h3" gutterBottom  component = "h3" align = "center" className = "fonte" >Logar</Typography>
-                                <TextField  onChange = {(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id = "usuario" label = "Usuario" variant = "outlined" name = "usuario" margin = "normal"  fullWidth />
-                                <TextField  onChange = {(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id = "senha" label = "Senha" variant = "outlined" name = "senha" margin = "normal" type = "password"fullWidth />
+                                <TextField  
+                                    onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} 
+                                    id="usuario" 
+                                    label="Usuario" 
+                                    variant="filled" 
+                                    name="usuario" 
+                                    margin="normal"  
+                                    fullWidth 
+                                    style={{ backgroundColor: '#e8f0fe', borderRadius: '4px' }}
+                                />
+                                <TextField 
+                                    onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} 
+                                    id="senha"
+                                    label="Senha" 
+                                    variant="filled" 
+                                    name="senha" 
+                                    margin="normal"
+                                    type="password"
+                                    fullWidth
+                                    style={{ backgroundColor: '#e8f0fe', borderRadius: '4px' }} 
+                                />
                                 <Box marginTop = {2} textAlign = "center"  > 
                                     <Link to = "/login" className = "text-decorator-none" >
                                         <Button  variant = "contained"   className = "btnCancelar botao"  >

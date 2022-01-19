@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AppBar, Toolbar, Typography, Box } from '@material-ui/core';
+import { AppBar, Toolbar, Typography, Box} from '@material-ui/core';
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom"
 import "./NavBar.css";
@@ -36,63 +36,67 @@ function Navbar() {
 
     if (token !== "") {
         navbarComponent = <AppBar position="relative" style={{ backgroundColor: "#263165" }}>
-            <Toolbar variant="dense" >
-                    <div>
+            <Toolbar variant="dense" style={{ position: 'relative', display:"flex", justifyContent: "space-between" }} >
+                <Link to="/home" className="text-decorator-none">
                     <img className="imglogo9" src="https://i.imgur.com/fmYFcHr.png" alt="" />
-                    </div>
-                    <Box 
-                   display = "flex"
-                   justifyContent = "center"
-                   alignItems = "center"
-                   marginLeft = "200px" ></Box>
+                </Link>
 
-                <Box display="flex" justifyContent="center"> 
-                    <Link to = "/feed" className = "text-decorator-none">
-                    <Box mx={1} style={{ cursor: "pointer" }} >
-                        <Typography variant="h6" className="texto">
-                            Feed
-                        </Typography>
-                    </Box>
+                <Box display="flex" justifyContent="center">
+                    <Link to="/feed" className="text-decorator-none">
+                        <Box mx={1} style={{ cursor: "pointer" }} >
+                            <Typography variant="h6" className="texto">
+                                Feed
+                            </Typography>
+                        </Box>
+                    </Link> 
+
+                    <Link to="/temas" className="text-decorator-none">
+                        <Box mx={1} style={{ cursor: "pointer" }} >
+                            <Typography variant="h6" className="texto">
+                                Tema
+                            </Typography>
+                        </Box>
                     </Link>
 
-                    <Link to = "/temas" className = "text-decorator-none">
-                    <Box mx={1} style={{ cursor: "pointer" }} >
-                        <Typography variant="h6" className="texto">
-                            Tema
+                    <Box style={{ cursor: "pointer" }} className="dropdown-btn">
+                        <Typography variant="h6" className="texto" >
+                            Cadastrar
                         </Typography>
+
+                        <Box className={`menu-dropdown`} >
+                            <Link to="/formularioTema" className="text-decorator-none">
+                                <Box mx={1} style={{ cursor: "pointer" }} >
+                                    <Typography variant="h6" className="texto">
+                                        Cadastrar Tema
+                                    </Typography>
+                                </Box>
+                            </Link>
+
+                            <Link to="/formularioPostagem" className="text-decorator-none">
+                                <Box mx={1} style={{ cursor: "pointer" }} >
+                                    <Typography variant="h6" className="texto">
+                                        Cadastrar Postagens
+                                    </Typography>
+                                </Box>
+                            </Link>
+                        </Box>      
                     </Box>
+
+                    <Link to="/posts" className="text-decorator-none">
+                        <Box mx={1} style={{ cursor: "pointer" }} >
+                            <Typography variant="h6" className="texto">
+                                Postagens
+                            </Typography>
+                        </Box>
                     </Link>
 
-                    <Link to = "/formularioTema" className = "text-decorator-none" >
-                    <Box mx={1} style={{ cursor: "pointer" }} >
-                        <Typography variant="h6" className="texto">
-                            Cadastrar Tema
-                        </Typography>
-                    </Box>
-                    </Link>
-
-                    <Link to = "/posts" className = "text-decorator-none">
-                    <Box mx={1} style={{ cursor: "pointer" }} >
-                        <Typography variant="h6" className="texto">
-                            Postagens
-                        </Typography>
-                    </Box>
-                    </Link>
-
-                    <Link to = "/formularioPostagem" className = "text-decorator-none">
-                    <Box mx={1} style={{ cursor: "pointer" }} >
-                        <Typography variant="h6" className="texto">
-                            Cadastrar Postagens
-                        </Typography>
-                    </Box>
-                    </Link>
 
                 </Box>
                 <Box mx={1} style={{ cursor: "pointer" }} onClick={goLogout}>
-                        <Typography variant="h6" className="texto">
-                            Logout
-                        </Typography>
-                    </Box>
+                    <Typography variant="h6" className="texto">
+                        Logout
+                    </Typography>
+                </Box>
 
             </Toolbar>
         </AppBar>
@@ -100,50 +104,38 @@ function Navbar() {
 
     if (token == "") {
         navbarhomeComponent = <AppBar position="relative" style={{ backgroundColor: "#263165" }}>
-            <Toolbar variant="dense" >
+            <Toolbar variant="dense" style={{ display: 'flex', justifyContent: 'space-between'}} >
                 <Box style={{ cursor: "pointer" }} >
-                    <Typography variant="h5" className="titulo">
-                    <div>
-                    <img className="imglogo8" src="https://i.imgur.com/fmYFcHr.png" alt="" />
-                    </div>
-                    </Typography>
+                    <Link to="/home" className="text-decorator-none">
+                        <img className="imglogo8" src="https://i.imgur.com/fmYFcHr.png" alt="" />
+                    </Link>
                 </Box>
 
-                <Link to = "/home" className = "text-decorator-none">
+                <Box style={{ display: 'flex' }}>
+                    <Link to="/home" className="text-decorator-none">
+                        <Box mx={1} style={{ cursor: "pointer" }} >
+                            <Typography variant="h6" className="texto">
+                                Home
+                            </Typography>
+                        </Box>
+                    </Link>
+
+                    <Link to="/sobrenos" className="text-decorator-none">
+                        <Box mx={1} style={{ cursor: "pointer" }} >
+                            <Typography variant="h6" className="texto">
+                                Sobre NÃ³s
+                            </Typography>
+                        </Box>
+                    </Link>
+                </Box>
+
                 <Box mx={1} style={{ cursor: "pointer" }} >
+                    <Link to="/login" className="text-decorator-none">
                         <Typography variant="h6" className="texto">
-                            Home
-                        </Typography>
-                    </Box>
-                    </Link>
-
-                    <Link to = "/sobrenos" className = "text-decorator-none">
-                    <Box mx={1} style={{ cursor: "pointer" }} >
-                        <Typography variant="h6" className="texto" id="texto1">
-                            Sobre Nós
-                        </Typography>
-                    </Box>
-                    </Link>
-
-                    <Box mx={1} style={{ cursor: "pointer" }} >
-                        <Typography variant="h6" className="texto" id="texto2">
-                            Contatos
-                        </Typography>
-                    </Box>
-                   <Box 
-                   display = "flex"
-                   justifyContent = "center"
-                   alignItems = "center"
-                   marginLeft = "450px" ></Box>
-                   
-
-                    <Box mx={1} style={{ cursor: "pointer" }} >
-                        <Typography variant="h6" className="texto">
-                            <Link to = "/login">
                             Login
-                            </Link>
                         </Typography>
-                    </Box>
+                    </Link>
+                </Box>
             </Toolbar>
         </AppBar>
     }

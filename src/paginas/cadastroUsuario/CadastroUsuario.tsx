@@ -81,10 +81,10 @@ function CadastroUsuario() {
                 <Box display="flex" justifyContent="center" alignItems="center" height="100vh" borderRadius = {8} >
                     <form onSubmit = {onSubmit} className="card-cadastro" >
                             <Typography variant = "h3" gutterBottom  component = "h3" align = "center" className = "fonte" >Cadastrar</Typography>
-                            <TextField  value = {user.nome} onChange = {(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id = "nome" label = "Nome" variant = "outlined" name = "nome" margin = "normal" fullWidth />
-                            <TextField  value = {user.usuario} onChange = {(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id = "usuario" label = "Usuario" variant = "outlined" name = "usuario" margin = "normal"  fullWidth />
-                            <TextField  value = {user.senha} onChange = {(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id = "senha" label = "Senha" variant = "outlined" name = "senha" margin = "normal" type = "password"fullWidth />
-                            <TextField  value = {confirmarSenha} onChange = {(e: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(e)} id = "confirmarsenha" label = "Confirmar Senha" variant = "outlined" name = "confirmarsenha" margin = "normal" type = "password" fullWidth />
+                            <TextField  value = {user.nome} onChange = {(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id = "nome" label = "Nome" variant="filled" name = "nome" margin = "normal" fullWidth style={{ backgroundColor: '#e8f0fe', borderRadius: '4px'}} />
+                            <TextField  value = {user.usuario} onChange = {(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id = "usuario" label = "Usuario" variant="filled" name = "usuario" margin = "normal"  fullWidth style={{ backgroundColor: '#e8f0fe', borderRadius: '4px'}} />
+                            <TextField  value = {user.senha} onChange = {(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id = "senha" label = "Senha" variant="filled" name = "senha" margin = "normal" type = "password"fullWidth style={{ backgroundColor: '#e8f0fe', borderRadius: '4px'}} />
+                            <TextField  value = {confirmarSenha} onChange = {(e: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(e)} id = "confirmarsenha" label = "Confirmar Senha" variant="filled" name = "confirmarsenha" margin = "normal" type = "password" fullWidth style={{ backgroundColor: '#e8f0fe', borderRadius: '4px'}} />
                             <Box marginTop = {2} textAlign = "center"  > 
                                 <Link to = "/login" className = "text-decorator-none" >
                                     <Button  variant = "contained"   className = "botao"  >

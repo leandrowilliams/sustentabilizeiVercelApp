@@ -97,7 +97,7 @@ function Login() {
                             style={{ backgroundColor: '#e8f0fe', borderRadius: '4px' }}
                         />
                         <Box display="flex" marginTop={2} textAlign="center">
-                            <Box marginLeft={8}><Link to="/login" className="text-decorator-none" >
+                            <Box marginLeft={9}><Link to="/login" className="text-decorator-none" >
 
                                 <Button variant="contained" className="btnCancelar botao"  >
                                     Cancelar

@@ -1,37 +1,36 @@
-.card-cadastro{
+.card-cadastro {
     background: #263165 !important;
     width: 600px!important;
     height: 550px!important;
     border-radius: 10px!important;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     font-weight: Teko !important;
     padding: 20px !important;
 }
 
-.background{
-    background: linear-gradient(45deg,#88c636 , #263165 );
+.background {
+    background: linear-gradient(45deg, #88c636, #263165);
     background-repeat: no-repeat;
     width: 100vh;
     min-height: 100vh;
     background-size: cover;
     background-position: center;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     font-weight: Teko !important;
     padding: 20px !important;
 }
 
-.color-input{
+.color-input {
     background-color: transparent;
     border: 1px!important;
     border-color: white!important;
-    
 }
 
-.botao2{
+.botao2 {
     background-color: #88c636 !important;
     border-radius: 20px!important;
     display: flex;
@@ -43,21 +42,24 @@
     transition: transform 1s;
 }
 
-.fonte{
+.fonte {
     color: white;
 }
 
-.hover-botao{
+.hover-botao {
     border-bottom: 1px rgba(0, 0, 0, 0.39) solid;
     transition: transform 1s;
 }
 
 .botao-cadastro {
-color: #3f51b5;
+    color: #3f51b5;
 }
 
-.imagem-logo{
+.imagem-logo {
     background-image: "https://i.imgur.com/fmYFcHr.png";
 }
 
-
+.colorr {
+    margin-left: 10px;
+    justify-content: center;
+}

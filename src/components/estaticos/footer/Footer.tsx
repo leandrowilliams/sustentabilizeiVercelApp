@@ -40,7 +40,7 @@ function Footer() {
                 </Box>
                 <Box className="box2">
                     <Box paddingTop={1}>
-                        <Typography variant="subtitle2" align="center" gutterBottom className="textos" >CopyrightÂ© 2021 SUSTENTABILIZEI - All Rights Reserved | Proudly powered by GENERATION.<a target="_blank" href="www.sustentabilizei.com.br">
+                        <Typography variant="subtitle2" align="center" gutterBottom className="textos" >Copyright© 2021 SUSTENTABILIZEI - All Rights Reserved | Proudly powered by GENERATION.<a target="_blank" href="www.sustentabilizei.com.br">
                         </a></Typography>
                     </Box>
                     <Box>

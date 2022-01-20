@@ -70,7 +70,7 @@ function Home() {
 
                 </Box>
             </Grid>
-            <Grid container direction="row" justifyContent="center" alignItems="center" className="grid4, page4">
+            <Grid container direction="row" justifyContent="center" alignItems="center">
                 <Box className="fontes">
                     <Typography variant="h2" align="center" className="textos">Parceiros e Patrocinadores</Typography>
                     <Box display="flex" justifyContent="center" padding={2}>

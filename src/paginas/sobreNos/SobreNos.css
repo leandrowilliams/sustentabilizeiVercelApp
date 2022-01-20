@@ -26,3 +26,10 @@
     border: 0px;
     margin-right: 50px;
 }
+
+.sus-titulo {
+    color: #ced1dd;
+    font-family: 'Signika';
+    padding-top: 80px;
+    position: static;
+}

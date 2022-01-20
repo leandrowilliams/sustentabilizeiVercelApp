@@ -17,12 +17,12 @@ function SobreNos() {
               className="fotos"
             />
           </Box>
-          <Box className="fontes.a">
             <Typography variant="h6" className="sus-titulo">
               {" "}
-              Olá, eu sou o Danillo! Atualmente em processo de migração de carreira, da Arquitetura e Urbanismo para a área da tecnologia. Possuo perfil mediador, disposto a ouvir diferentes perspectivas afim de otimizar o trabalho em equipe.
+              Olá, eu sou o Danillo! Atualmente em processo de migração de carreira, da Arquitetura e Urbanismo para a área da tecnologia. Nela encontrei um caminho pra fazer aquilo que eu quero, e que
+eu busco em todas as minhas experiências, que é a possibilidade de criar e ajudar pessoas. Possuo perfil mediador, disposto a ouvir diferentes perspectivas afim de otimizar o trabalho em equipe. E agora, pós Generation, um ambiente de aprendizado constante e contato com pessoas
+diversas, eu me sinto pronto pra fazer parte do mercado da tecnologia.
             </Typography>
-          </Box>
         </Box>
         <Box display="flex" justifyContent="center" padding={2}>
           <Box className="holder"></Box>
@@ -103,7 +103,7 @@ function SobreNos() {
           <Box className="fontes.a">
             <Typography variant="h6" className="sus-titulo">
               {" "}
-              Olá, eu sou a Safira! Interessada por aprendizagens infindáveis e num momento de muita fragilidade pessoal, me aproximei intensamente da tecnologia. Em 2021 iniciei o processo de mudança de área profissional e aqui estou: desenvolvedora web java junior formada! Comunicativa, persistente e com muita orientação ao futuro, estou com grandes expectativas nesse mais novo e importante passo da minha vida.
+              Olá, eu sou a Safira! Interessada por aprendizagens infindáveis e num momento de muita fragilidade pessoal, me aproximei intensamente da tecnologia e tive uma maravilhosa surpresa: me identifiquei muito com a área. Em 2021 iniciei o processo de mudança na vida profissional e aqui estou: desenvolvedora full-stack java junior formada! Comunicativa, persistente e com muita orientação ao futuro, estou com grandes expectativas nesse mais novo e importante passo da minha vida.
             </Typography>
           </Box>
         </Box>

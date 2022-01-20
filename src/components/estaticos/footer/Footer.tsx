@@ -18,19 +18,6 @@ function Footer() {
 
     if (token !== "") {
         footerComponent = <Grid container direction="row" justifyContent="center" alignItems="center">
-            <Grid alignItems="center" item xs={12} className="box3">
-                <div className="backgroufooter">
-                    <Typography variant="h2" align="center" gutterBottom className="textos">#Sustentabilize para um planeta melhor!</Typography>
-
-                    <Box display="flex">
-                        <div>
-                            <img className="imglogo" src="https://i.imgur.com/fmYFcHr.png" alt="LOGO" />
-                        </div>
-                    </Box>
-
-                </div>
-            </Grid>
-
             <Grid alignItems="center" item xs={12}>
 
                 <Box className="box1">
@@ -70,7 +57,6 @@ function Footer() {
     if (token == "") {
         footerhomeComponent = <Grid container direction="row" justifyContent="center" alignItems="center">
             <Grid alignItems="center" item xs={12}>
-
                 <Box className="box1">
 
                     <Box paddingTop={1} display="flex" alignItems="center" justifyContent="center">

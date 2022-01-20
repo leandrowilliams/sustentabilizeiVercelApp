@@ -6,11 +6,6 @@ function SobreNos() {
   return (
     <>
       <Grid item xs={12} className="corpo">
-        <Box padding={5}className="corpo1">
-          <Typography variant="h3" align="center" className="sus-titulo">
-            Sobre Nossa Historia
-          </Typography>
-        </Box>
       </Grid>
       <Grid item xs={12}className="corpo">
         <Box display="flex" justifyContent="center" padding={2}>

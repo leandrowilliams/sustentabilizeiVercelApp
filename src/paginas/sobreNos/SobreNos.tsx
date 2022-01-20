@@ -36,7 +36,7 @@ diversas, eu me sinto pronto pra fazer parte do mercado da tecnologia.
           <Box className="fontes.a">
             <Typography variant="h6" className="sus-titulo">
               {" "}
-              Olá, eu sou o Leandro! Quando ainda pequeno, tive contato com a língua PERL através de um jogo que eu passava horas jogando, gostava de ver as letras verdes no fundo preto, foi uma experiência diferente! Tive contato com muitas coisas, sempre procurando algo que pudesse me encaixar, mas sempre fazia algum curso na área de informática e fiz estágio na área. Vejo que com a persistência conseguirei seguir em frente para mais desafios!
+              Sou um Dev que tem sede por conhecimento, desde pequeno adorava ver as letras verdes no fundo preto, tive o primeiro contato com PERL através de um jogo que passava horas jogando, cheguei até automatizar os bots para se comunicarem com outros jogadores, assim tornando mais real possível, os jogadores não conseguiam diferenciar quem eram bots e jogadores reais, com toda essa experiência que adquirir com anos na tecnologia me sinto mais que preparado para seguir como desenvolvedor.
             </Typography>
           </Box>
         </Box>

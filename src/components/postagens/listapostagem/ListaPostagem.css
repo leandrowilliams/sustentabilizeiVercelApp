@@ -1,4 +1,4 @@
-.card-postagem{
+.card-postagem {
     background: #263165;
     width: 500px!important;
     height: 300px!important;
@@ -13,28 +13,29 @@
     align-items: center !important;
 }
 
-.back-lista-post{
-    background: linear-gradient(45deg,#88c636 , #263165 );
+.back-lista-post {
+    background: white;
+}
 
-}.text-decorator-none{
+.text-decorator-none {
     text-decoration: none;
 }
 
-.font-feed{
+.font-feed {
     color: white;
 }
 
-.font-feed-tema{
+.font-feed-tema {
     color: #88c636;
     font-style: italic;
 }
 
-.font-feed-user{
+.font-feed-user {
     color: #88c636;
     font-weight: bold;
 }
 
-.perfil-icon{
+.perfil-icon {
     font-size: 50px !important;
     color: #88c636;
     margin-top: -15px;
@@ -42,12 +43,12 @@
     margin-left: -5px;
 }
 
-.dot-icon{
+.dot-icon {
     font-size: 30px !important;
     color: #88c636;
     margin-top: 1px;
 }
 
-.option-icon{
+.option-icon {
     color: white !important;
 }

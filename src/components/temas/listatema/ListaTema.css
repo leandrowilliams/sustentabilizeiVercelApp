@@ -1,3 +1,13 @@
-.text-decorator-none{
+.text-decorator-none {
     text-decoration: none;
+}
+
+.btn-atualizar-corr {
+    background-color: #88c636 !important;
+    color: white !important;
+}
+
+.btn-deletar-corr {
+    background-color: #263165 !important;
+    color: white !important;
 }

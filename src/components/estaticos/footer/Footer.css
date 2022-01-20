@@ -1,4 +1,6 @@
-.box1 {}
+.box1 {
+    background: linear-gradient(45deg, #88c636, #263165);
+}
 
 .box2 {
     background-color: #ADD9B0;

@@ -58,6 +58,14 @@ function Navbar() {
                         </Box>
                     </Link>
 
+                    <Link to="/posts" className="text-decorator-none">
+                        <Box mx={1} style={{ cursor: "pointer" }} >
+                            <Typography variant="h6" className="texto">
+                                Postagens
+                            </Typography>
+                        </Box>
+                    </Link>
+
                     <Box style={{ cursor: "pointer" }} className="dropdown-btn">
                         <Typography variant="h6" className="texto" >
                             Cadastrar
@@ -81,15 +89,6 @@ function Navbar() {
                             </Link>
                         </Box>      
                     </Box>
-
-                    <Link to="/posts" className="text-decorator-none">
-                        <Box mx={1} style={{ cursor: "pointer" }} >
-                            <Typography variant="h6" className="texto">
-                                Postagens
-                            </Typography>
-                        </Box>
-                    </Link>
-
 
                 </Box>
                 <Box mx={1} style={{ cursor: "pointer" }} onClick={goLogout}>
@@ -123,7 +122,7 @@ function Navbar() {
                     <Link to="/sobrenos" className="text-decorator-none">
                         <Box mx={1} style={{ cursor: "pointer" }} >
                             <Typography variant="h6" className="texto">
-                                Sobre Nós
+                                Sobre NÃ³s
                             </Typography>
                         </Box>
                     </Link>
@@ -146,7 +145,5 @@ function Navbar() {
         </>
     )
 }
-
-
 
 export default Navbar;

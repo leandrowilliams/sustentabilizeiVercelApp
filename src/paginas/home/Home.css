@@ -112,6 +112,13 @@
     margin-right: 50px;
 }
 
+.grid4 {
+    width: 2250px;
+    height: 400px;
+    border: 0px;
+    margin-right: 50px;
+}
+
 .holder {
     background: linear-gradient(45deg, #88c636, #263165);
     display: flex;

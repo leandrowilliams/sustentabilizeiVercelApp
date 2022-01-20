@@ -6,20 +6,20 @@ function CaroucelComponent() {
     const [itens, setItens] = useState([
         {
             img: "https://i.imgur.com/TmfBl9k.png",
-            titulo: "Titulo 1",
+            titulo: "",
         },
         {
             img: "https://i.imgur.com/F3ZZvqP.png",
-            titulo: "Titulo 2",
+            titulo: "",
 
         },
         {
             img: "https://i.imgur.com/xgPa8xT.png",
-            titulo: "Titulo 3",
+            titulo: "",
         },
         {
             img: "https://i.imgur.com/L52J0ve.png",
-            titulo: "Titulo 4",
+            titulo: "",
         },
     ])
     return (

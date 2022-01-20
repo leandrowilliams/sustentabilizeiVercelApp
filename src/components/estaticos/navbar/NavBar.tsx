@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AppBar, Toolbar, Typography, Box} from '@material-ui/core';
+import { AppBar, Toolbar, Typography, Box } from '@material-ui/core';
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom"
 import "./NavBar.css";
@@ -36,19 +36,28 @@ function Navbar() {
 
     if (token !== "") {
         navbarComponent = <AppBar position="relative" style={{ backgroundColor: "#263165" }}>
-            <Toolbar variant="dense" style={{ position: 'relative', display:"flex", justifyContent: "space-between" }} >
+            <Toolbar variant="dense" style={{ position: 'relative', display: "flex", justifyContent: "space-between" }} >
                 <Link to="/home" className="text-decorator-none">
                     <img className="imglogo9" src="https://i.imgur.com/fmYFcHr.png" alt="" />
                 </Link>
 
                 <Box display="flex" justifyContent="center">
+
+                    <Link to="/home" className="text-decorator-none">
+                        <Box mx={1} style={{ cursor: "pointer" }} >
+                            <Typography variant="h6" className="texto">
+                                Home
+                            </Typography>
+                        </Box>
+                    </Link>
+
                     <Link to="/feed" className="text-decorator-none">
                         <Box mx={1} style={{ cursor: "pointer" }} >
                             <Typography variant="h6" className="texto">
                                 Feed
                             </Typography>
                         </Box>
-                    </Link> 
+                    </Link>
 
                     <Link to="/temas" className="text-decorator-none">
                         <Box mx={1} style={{ cursor: "pointer" }} >
@@ -87,9 +96,16 @@ function Navbar() {
                                     </Typography>
                                 </Box>
                             </Link>
-                        </Box>      
+                        </Box>
                     </Box>
 
+                    <Link to="/sobrenos" className="text-decorator-none">
+                        <Box mx={1} style={{ cursor: "pointer" }} >
+                            <Typography variant="h6" className="texto">
+                                Sobre Nós
+                            </Typography>
+                        </Box>
+                    </Link>
                 </Box>
                 <Box mx={1} style={{ cursor: "pointer" }} onClick={goLogout}>
                     <Typography variant="h6" className="texto">
@@ -103,7 +119,7 @@ function Navbar() {
 
     if (token == "") {
         navbarhomeComponent = <AppBar position="relative" style={{ backgroundColor: "#263165" }}>
-            <Toolbar variant="dense" style={{ display: 'flex', justifyContent: 'space-between'}} >
+            <Toolbar variant="dense" style={{ display: 'flex', justifyContent: 'space-between' }} >
                 <Box style={{ cursor: "pointer" }} >
                     <Link to="/home" className="text-decorator-none">
                         <img className="imglogo8" src="https://i.imgur.com/fmYFcHr.png" alt="" />
@@ -122,7 +138,7 @@ function Navbar() {
                     <Link to="/sobrenos" className="text-decorator-none">
                         <Box mx={1} style={{ cursor: "pointer" }} >
                             <Typography variant="h6" className="texto">
-                                Sobre NÃ³s
+                                Sobre Nós
                             </Typography>
                         </Box>
                     </Link>
